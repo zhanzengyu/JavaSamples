@@ -26,8 +26,6 @@ public class ExcelWriter {
 		}
 
 		File xlsFile = new File(fileName);
-		System.out.println("xlsFile exist="+xlsFile.exists());
-		System.out.println("xlsFile exist="+xlsFile.getAbsolutePath());
 		workbook.write(xlsFile);// 或者以流的形式写入文件 workbook.write(new FileOutputStream(xlsFile));
 		workbook.close();
 	}
