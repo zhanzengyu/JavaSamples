@@ -26,8 +26,16 @@ public class ExcelWriter {
 		}
 
 		File xlsFile = new File(fileName);
-		workbook.write(xlsFile);// 或者以流的形式写入文件 workbook.write(new FileOutputStream(xlsFile));
-		workbook.close();
+		try {
+			// 或者以流的形式写入文件 workbook.write(new FileOutputStream(xlsFile));
+			workbook.write(xlsFile);
+		} catch (IOException e) {
+		} finally {
+			try {
+				workbook.close();
+			} catch (IOException e) {
+			}	
+		}
 	}
 
 	// 创建Excel的一行数据。
