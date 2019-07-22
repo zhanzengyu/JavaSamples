@@ -10,7 +10,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 public class ExcelWriter {
 
-	public void write(String fileName, List<StudentScore> list) throws IOException {
+	public void write(String fileName, List<StudentScore> list) {
 		HSSFWorkbook workbook = new HSSFWorkbook();
 
 		HSSFSheet sheet = workbook.createSheet("StudentScore");
@@ -30,10 +30,12 @@ public class ExcelWriter {
 			// 或者以流的形式写入文件 workbook.write(new FileOutputStream(xlsFile));
 			workbook.write(xlsFile);
 		} catch (IOException e) {
+			// TODO
 		} finally {
 			try {
 				workbook.close();
 			} catch (IOException e) {
+				// TODO
 			}	
 		}
 	}
