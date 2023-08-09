@@ -8,3 +8,6 @@ Java 实用例子集合
 
 ### 2. Java 反射
 代码仓库：[Reflect](https://github.com/zhanzengyu/JavaSamples/blob/master/Reflect/src/Main.java)
+
+### 3. 责任链模式
+代码仓库：[ResponsibilityChainPattern](https://github.com/zhanzengyu/JavaSamples/blob/master/ResponsibilityChainPattern/src/com/nesger/responsibility/better/BetterDemo.java)
