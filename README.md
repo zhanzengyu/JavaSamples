@@ -11,3 +11,6 @@ Java 实用例子集合
 
 ### 3. 责任链模式
 代码仓库：[ResponsibilityChainPattern](https://github.com/zhanzengyu/JavaSamples/blob/master/ResponsibilityChainPattern/src/com/nesger/responsibility/better/BetterDemo.java)
+
+### 4. JavaUtils 工具类
+代码仓库：[JavaUtils](https://github.com/zhanzengyu/JavaSamples/blob/master/Utils/README.md)
